@@ -1,0 +1,249 @@
+#name-list button.hide {
+    display: none;
+}
+
+.omit {
+    font-size: 20px;
+    align-self: center;
+    margin-right: 5px;
+}
+
+button {
+    width: 180px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    padding: 0.25em 1em;
+    border: 0;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'Kosugi', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+button:focus {
+	outline:0;
+}
+
+
+button:before, button:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    width: -webkit-calc(100% + 14px);
+    width: calc(100% + 14px);
+    background-color: black;
+}
+
+button:before, button:after {
+    content: '';
+    position: absolute;
+    top: -7px;
+    width: 2px;
+    height: -webkit-calc(100% + 14px);
+    height: calc(100% + 14px);
+    background-color: black;
+    transition: .3s;
+}
+button:before {
+    left: 7px;
+
+  }
+button:after {
+    right: 7px;
+
+}
+button:hover:before {
+    top: 0px;
+    left:0;
+    height: 100%;
+}
+button:hover:after {
+    top: 0px;
+    right: 0;
+    height: 100%;
+}
+
+label {
+    margin: auto;
+    margin: auto;
+    border: solid;
+    padding: 10px;
+    border-top: none;
+    border-bottom: none;
+    border-color: black;
+}
+
+label input:focus{
+    outline: none;
+}
+
+body {
+    background-color: azure;
+}
+
+
+
+
+#name-list {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr) repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 100px;
+    padding: 30px 20px;
+
+}
+
+#name-list button:first-child {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    left: 20px;
+}
+
+#name-list button:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    left: 40px;
+}
+
+
+
+#name-list button:nth-child(3) {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+}
+
+#name-list button:nth-child(4) {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    left: 40px;
+}
+
+#name-list button:nth-child(5) {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    right: 60px;
+}
+
+#name-list button:nth-child(6) {
+    grid-column: 5 / 6;
+    grid-row: 5 / 6;
+}
+
+#name-list button:nth-child(7) {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+#name-list button:nth-child(8) {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+}
+
+#name-list button:nth-child(9) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+#name-list button:nth-child(10) {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    left: 40px;
+}
+
+#name-list button:nth-child(11) {
+    grid-column: 4 / 5;
+    grid-row: 5 / 6;
+}
+
+#name-list button:nth-child(12) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    right: 60px;
+}
+
+#name-list button:nth-child(13) {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+}
+
+#name-list button:nth-child(14) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    left: 40px;
+}
+
+#name-list button:nth-child(15) {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+}
+
+#name-list button:nth-child(16) {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+#name-list button:nth-child(17) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    right: 60px;
+}
+
+#name-list button:nth-child(18) {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+
+#name-list button:nth-child(19) {
+    grid-column: 5 / 6;
+    grid-row: 3 / 4;
+}
+
+#name-list button:nth-child(20) {
+    grid-column: 5 / 6;
+    grid-row: 4 / 5;
+}
+
+#name-list button:nth-child(21) {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    right: 60px;
+}
+
+.reverse {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    bottom: 77px;
+    left: -123px;
+    color: rebeccapurple;
+}
+
+header {
+    height: 50px;
+    background-color: white;
+    font-size: 25px;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'Kosugi', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'M PLUS 1p', sans-serif;
+    display: flex;
+}
+
+
+.popup-overlay{
+    visibility: hidden;
+    position: absolute;
+    background: #ffffff;
+    border: 3px solid #666666;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+}

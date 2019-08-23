@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Kosugi|Kosugi+Maru|M+PLUS+1p|M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e0db66e20b.js"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="jquery.js" defer></script> -->
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <label>入力してください(名前,性別,etc.)
+            <input id="search-name-input" maxlength="10" type="text">
+        </label>
+        <p class="omit">敬称略</p>
+    </header>
+
+
+    <div id="name-list">
+        <!-- (onclick="location.href="")の中身を追加してください -->
+            
+            <button data-names="米田 完" data-name="米田完" data-phonetic="よねだかん" data-sex="男" data-status="先生" data-nick="完さん" onclick="location.href=''">米田 完</button>
+
+            <button data-names="遠藤 駿也" data-name="遠藤駿也" data-phonetic="えんどうしゅんや" data-sex="男" data-status="生徒" data-nick="遠ちゃん" onclick="location.href='web-a/shunyaendoh/about_me2.html'">遠藤 駿也</button>
+            
+            <button data-names="久松 勇斗" data-name="久松勇斗" data-phonetic="ひさまつゆうと" data-sex="男" data-status="生徒" data-nick="ゆうと" onclick="location.href=''">久松 勇斗 </button>
+            <button data-names="宇田川 政文" data-name="宇田川政文" data-phonetic="うだがわまさふみ" data-sex="男" data-status="生徒" data-nick="まささん" onclick="location.href=''">宇田川 政文</button>
+            <button data-names="高倉 楓麻" data-name="高倉楓麻" data-phonetic="たかくらふうま" data-sex="男" data-status="生徒" data-nick="キン肉マン" onclick="location.href=''">高倉 楓麻</button>
+            <button data-names="宮本 健" data-name="宮本健" data-phonetic="みやもとけん" data-sex="男" data-status="生徒" data-nick="健さん" onclick="location.href=''">宮本 健</button>
+            <button data-names="橋下 昭宏" data-name="橋下昭宏" data-phonetic="はしもとあきひろ" data-sex="男" data-status="生徒" data-nick="あっきー" onclick="location.href=''">橋下 昭宏</button>
+            <button data-names="原田 茂大" data-name="原田茂大" data-phonetic="はらだしげひろ" data-sex="男" data-status="生徒" data-nick="シゲ" onclick="location.href=''">原田 茂大</button>
+            <button data-names="佐藤 良太" data-name="佐藤良太" data-phonetic="さとうりょうた" data-sex="男" data-status="生徒" data-nick="良太さん" onclick="location.href=''">佐藤 良太</button>
+            <button data-names="山本 紀子" data-name="山本紀子" data-phonetic="やまもとのりこ" data-sex="女" data-status="生徒" data-nick="紀子" onclick="location.href=''">山本 紀子</button>
+            <button data-names="人見 陽太郎" data-name="人見陽太郎" data-phonetic="ひとみようたろう" data-sex="男" data-status="生徒" data-nick="陽太郎" onclick="location.href=''">人見 陽太郎</button>
+            <button data-names="石田 裕己" data-name="石田裕己" data-phonetic="いしだゆうき" data-sex="男" data-status="生徒" data-nick="ゆうき" onclick="location.href=''">石田 裕己</button>
+            <button data-names="前原 啓太" data-name="前原啓太" data-phonetic="まえはらけいた" data-sex="男" data-status="生徒" data-nick="まえっち" onclick="location.href=''">前原 啓太</button>
+            <button data-names="丹野 光" data-name="丹野光" data-phonetic="たんのひかる" data-sex="男" data-status="生徒" data-nick="光" onclick="location.href=''">丹野 光</button>
+            <button data-names="島田 淳一" data-name="島田淳一" data-phonetic="しまだじゅんいち" data-sex="男" data-status="生徒" data-nick="淳一さん" onclick="location.href=''">島田 淳一</button>
+            <button data-names="兼田 戒" data-name="兼田戒" data-phonetic="かねだかい" data-sex="男" data-status="生徒" data-nick="かい" onclick="location.href=''">兼田　戒</button>
+            <button data-names="山本 淳太" data-name="山本淳太" data-phonetic="やまもとじゅんた" data-sex="男" data-status="生徒" data-nick="淳太" onclick="location.href=''">山本 淳太</button>
+            <button data-names="松田 拓也" data-name="松田拓也" data-phonetic="まつだたくや" data-sex="男" data-status="生徒" data-nick="ちょにー" onclick="location.href=''">松田 拓也</button>
+            <button data-names="城間 健太郎" data-name="城間健太郎" data-phonetic="しろまけんたろう" data-sex="男" data-status="生徒" data-nick="健太郎" onclick="location.href=''">城間 健太郎</button>
+            <button data-names="城間 海月" data-name="城間海月" data-phonetic="しろまみずき" data-sex="女" data-status="生徒" data-nick="海月ちゃん" onclick="location.href=''">城間 美月</button>
+            <button data-names="家田 真帆" data-name="家田真帆" data-phonetic="いえだまほ" data-sex="女" data-status="生徒" data-nick="真帆" onclick="location.href=''">家田 真帆</button>
+            
+            <button class="reverse">REVERSE</button>
+
+    </div>
+    
+</body>
+</html>
